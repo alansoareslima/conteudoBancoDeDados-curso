@@ -1,5 +1,5 @@
 
--- Criar Banco de Dados - Fórmula 1 --
+-- Criar Banco de Dados - FÃ³rmula 1 --
 
 Create Database db_formula1;
 
@@ -10,7 +10,7 @@ use db_formula1;
 Create Table Campeonato
 (
 	Id_Campeonato	int not null Primary Key,
-	Descricao		Varchar(40) not null,
+	Descricao	Varchar(40) not null,
 	Ano_Campeonato	Numeric(4)
 );
 
@@ -30,15 +30,15 @@ Create Table Pista
 (
 	Id_Pista	int not null Primary Key,
 	Nome_Pista	Varchar(60) not null,
-	Tamanho		numeric(6, 2), -- 6 dígitos, 2 decimais (9999,99)
+	Tamanho		numeric(6, 2), -- 6 dÃ­gitos, 2 decimais (9999,99)
 	Sigla_Pais	Char(3)
 );
 
 Create Table Corrida
 (
 	Id_Corrida		int not null Primary Key,
-	Data_Corrida	date,
-	Id_Campeonato	int,
+	Data_Corrida		date,
+	Id_Campeonato		int,
 	Id_Pista		int
 );
 
@@ -46,5 +46,5 @@ Create Table Ranking
 (
 	Id_Piloto		int,
 	Id_Corrida		int,
-	Num_Colocacao	Numeric(2)
+	Num_Colocacao		Numeric(2)
 );
