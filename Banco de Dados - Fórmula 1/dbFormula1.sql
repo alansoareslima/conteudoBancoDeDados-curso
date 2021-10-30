@@ -36,15 +36,15 @@ Create Table Pista
 
 Create Table Corrida
 (
-	Id_Corrida		int not null Primary Key,
-	Data_Corrida		date,
-	Id_Campeonato		int,
-	Id_Pista		int
+	Id_Corrida	int not null Primary Key,
+	Data_Corrida	date,
+	Id_Campeonato	int,
+	Id_Pista	int
 );
 
 Create Table Ranking
 (
-	Id_Piloto		int,
-	Id_Corrida		int,
-	Num_Colocacao		Numeric(2)
+	Id_Piloto	int,
+	Id_Corrida	int,
+	Num_Colocacao	Numeric(2)
 );
